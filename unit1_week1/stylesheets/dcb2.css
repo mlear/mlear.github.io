@@ -3,6 +3,9 @@ a:visited {color:#00FF00;}
 a:hover {color:#FF00FF;}  
 a:active {color:#0000FF;}
 
+li:first-child {color:#33CC33;}
+li:last-child {color:#ff3399;}
+
 .blue{
 	color: blue;
 }
