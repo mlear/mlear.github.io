@@ -1,0 +1,48 @@
+a:link {color:#FF0000;}    
+a:visited {color:#00FF00;} 
+a:hover {color:#FF00FF;}  
+a:active {color:#0000FF;}
+
+.blue{
+	color: blue;
+}
+
+.caption{
+	position: absolute;
+	left: 200px;
+}
+img {
+	float: left;
+	width: 300px;
+	border: 1px solid #000000
+}
+
+#footer {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	color: red;
+	padding-top: 50px;
+}
+#header {
+	width: 300px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+#content {
+	margin: auto;
+	margin-top: 150px;
+	margin-bottom: 50px;
+	width: 300px;
+	border: 1px solid #000000;
+}
+#sidebar {
+	float: left;
+	height: 500px;
+	width: 75px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 50px;
+	margin-right: auto;
+	border: 1px solid #000000;
+}
