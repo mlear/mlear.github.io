@@ -1,0 +1,174 @@
+header {
+	color: #ffffff;
+	font-size: 2em;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+	}
+h1 {
+	color: #ffffff;
+	font-size: 3em;
+}
+
+h2 {
+	color: #ffffff;
+	font-size: 2em;
+	border-style: outset;
+	width: 25%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.intro {
+	color: #ffffff;
+	width: 80%;
+}
+
+body{
+	background-image: url("http://i58.tinypic.com/2v8lc13.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+div.nav_bar{
+	display:inline-block;
+	position: fixed;
+	background-color:transparent;
+	top: 0;
+	width: 100%;
+	height: .625em;
+	opacity:0.4;
+	padding: .8em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul.nav{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+a.navlink:link {color:#246bb2;	
+		display: inline-block;
+		width: 5.25em;
+		background-color: #E6E68A;
+		text-align: center;
+		padding:0px;
+		margin:0px;
+		border-style:none;
+		border:0px;
+		text-decoration: none;
+}
+a:visited {color:#246bb2;}
+
+a.navlink:hover {
+	color:#ccccff;
+	background-color: #446599;
+}
+
+div.link_wrapper {
+	
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+ul.link_list{
+	list-style-type: none;
+	padding:0;
+}
+
+
+a.dbc_blog:link {	
+	display: block;
+	background-image: url("http://i61.tinypic.com/2r2opc1.jpg");
+	text-align: center;
+	width: 56.25em;
+	height: 7.8125em;
+	padding:0px;
+	margin:1em;
+	margin-left:auto;
+	margin-right:auto;
+	border-style:none;
+	border:0px;
+	text-decoration: none;
+}
+a.dbc_blog:visited {color:#246bb2;}
+ 	
+a.dbc_blog:hover {
+	background-image: url("http://i62.tinypic.com/mrutmx.jpg");
+}
+
+a.dbc_web:link {
+	display: block;
+	background-image: url("http://i61.tinypic.com/wkmhzd.jpg");
+	text-align: center;
+	width: 56.25em;
+	height: 7.8125em;
+	padding:0px;
+	margin:1em;
+	margin-left:auto;
+	margin-right:auto;
+	border-style:none;
+	border:0px;
+	text-decoration: none;
+}
+a.dbc_web:visited {color:#246bb2;}
+ 	
+a.dbc_web:hover {
+	background-image: url("http://i58.tinypic.com/abmhll.jpg");
+}
+
+a.dbc_tech:link {	
+	display: block;
+	background-image: url("http://i60.tinypic.com/qntdls.jpg");
+	text-align: center;
+	width: 56.25em;
+	height: 7.8125em;
+	padding:0px;
+	margin:1em;
+	margin-left:auto;
+	margin-right:auto;
+	border-style:none;
+	border:0px;
+	text-decoration: none;
+}
+a.dbc_tech:visited {color:#246bb2;}
+ 	
+a.dbc_tech:hover {
+	background-image: url("http://i60.tinypic.com/2d8gpzt.jpg");
+}
+
+
+
+div.about_me {
+	background-color: #cccccc;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .625em;
+}
+
+div.wrapper {
+	display:block;
+	float:right;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	position: relative;
+	
+}
+
+footer {
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	background-color: #cccccc;
+	padding-top: .625em;
+	padding-bottom: .625em;
+	margin-top: 1em;
+	
+}

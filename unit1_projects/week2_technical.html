@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<a name="home"></a>	
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="C:\Users\Marty\Documents\GitHub\mlear.github.io\unit1_projects\stylesheets\week2_technical.css">
+		<title>CSS Positioning, or How I Learned to Stop Worrying and Love The Code</title>
+		<h1><center>CSS Positioning, or How I learned to Stop Worrying and Love The Code</center></h1>
+	</head>
+	
+	<div class="nav_window">
+		<ul id="nav">
+			<li.inline><a href="#home">Home</a></li>
+			<li.inline><a href="#intro">Introduction</a></li>
+			<li.inline><a href="#relate">Relative</a></li>
+			<li.inline><a href="#absol">Absolute</a></li>
+			<li.inline><a href="#fix">Fixed</a></li>
+		</ul>
+	</div>
+
+	
+
+	<a name="intro"></a>	
+
+	<h2>Intro to Positioning</h2>
+
+	<div class="intro">
+
+		<p><center>Have you ever looked at a website and seen all of the different sections, windows, images, forms, and links and wonder how the progammer was able to place that specific... thing.. right exactly where it was?  That, is the beauty of positioning.  Without it, your webpage would be boring and mundane.  Luckily, we have more than just basic rules to tell things where to go.  Below, you will find some examples of different types of positioning and can see for yourself what would work best for you.</center></p>
+
+	<a name="relate"></a>
+
+	<h2>Relative positioning</h2>
+
+	<div class="relate">
+
+		<p>Relative positioning allows for the designer to shift an element from its original position in the code.  One word comes after the next, then comes the next paragraph, or link, or picture, etc...<p>
+
+		<p>Elements can be shifted left, right, up, down and even overlap other elements, but they will always retain their original position as it relates to the flow.  No matter where you shift it, the next element will begin where that last element should have ended.</p>
+
+		<h3><center><b>Horizontal movement</b></center></h3>
+
+		<div class="horizontal">
+
+			<p><center>I haven't been moved.</center></p>
+			<p class="relate_left">I've been moved to the left!</p>
+			<p class="relate_right">I've been moved to the right!</p>
+
+		</div>
+
+		<h3><center><b>Vertical movement</b></center></h3>
+
+		<div class="vertical">
+
+			<p class="prepup">I've been moved </p>
+			<p class="relate_up">up!</p></br></br>
+			<p class="downprep">and I've been moved </p>
+			<p class="relate_down">down...</p></br></br>
+
+		</div>
+
+		<h3><center><b>Overlap</b></center></h3>
+
+		<div class="overlap">
+
+		<p><center>And this is what it</center></p>
+		<p class="overlap">looks like to be overlapped!</p>
+
+		</div>
+			
+	</div>
+
+	<a name="absol"></a>
+
+	<h2>Absolute Positioning</h2>
+
+	<div class="absol">
+
+		<p>Absolute positioning places an element in relation to the first parent of that element that is in a static position.  "Wunderbar!" you exclaim, but what the heck does that mean?  It means that it uses the last element in the flow that didn't move, and moves the absolute element in relation to it.  That didn't help did it?  Well.. that's all I got beyond examples!  Look to the left and you will see a picture floated in the page.  On top of that image is a caption that has been placed there with a position of absolute.  No matter what else is written in the page's code, that "Sir!  I have a plan!" is going to be ignored and will stay put in the bottom left corner of that picture.  This also remains true if you move the picture to some other place on the page, that caption is not moving.</p>
+
+		<div class="wrapper">
+
+			<img src="http://i59.tinypic.com/2nizl28.jpg" alt="Dr. Strangelove">
+
+				<div class="caption">
+
+					<p class="caption_content"><b>Sir! I have a plan!</b></p>
+				</div>
+		</div>
+
+		<p>If no static element exists, it will default to the html tag at the beginning of the page.  In addition, as noted earlier, absolute positioning takes the element straight out of the flow!  The other elements will ignore where the absolute element is, allowing for captioning, as already seen, and for the customization of other elements without having to worry about them being affected by your absolute element.</p>
+
+	<a name="fix"></a></br></br></br></br></br></br></br></br></br></br></br></br>
+
+	<h2>Fixed Positioning</h2>
+
+	<div class="fix">
+
+		<p>Fixed positioning keeps the element on screen at all time, a great example of this is the use of navigation bars that stay put no matter how much you scroll.  Just like the one over to the right!  Like absolute positioning, the fixed posistion is also out of the flow of the page and will be ignored by the other elements.</p>
+
+	
+	<p class="whoops">This is what happens with absolute positioning... whoops...</p>
+
+	<footer>
+		<p.footer_text><center><b>Hey look, it's a generic footer!</b></center>
+	</footer>
+	
+
+</html>

@@ -1,0 +1,191 @@
+h1 {
+	color:#e6e68a;
+	background-color: #246bb2;
+	text-decoration:bold;
+	padding:30px;
+	font-size:2.5em;
+	margin:0;
+	border-style:none;
+	border:0;
+	border-color: #246bb2;
+}
+
+body {
+	background-color: #e6e6e6;
+	
+}
+
+h2 {text-align: center}
+
+.nav_window {
+	position: fixed;	
+	right: 0;
+	bottom: 25%;
+}
+
+footer {
+	bottom: 0px;
+	font-size: 1.5em;
+	font-family:"Comic Sans MS";
+	background-color: #E6E68A;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+p.footer_text {
+	bottom:-5px;
+	font-family:"Comic Sans MS";
+}
+
+
+li.inline {
+	display:inline-block;
+	float:left;
+	
+}
+a:link {color:#246bb2;	
+		display: inline-block;
+		width: 80px;
+		background-color: #E6E68A;
+		text-align: center;
+		padding:0px;
+		margin:0px;
+		border-style:none;
+		border:0px;
+		text-decoration: none;
+		}
+a:visited {color:#246bb2;}
+a:hover {color:#e6e68a;
+		 background-color: #246bb2}
+
+
+h3 {
+	background-color: #e6e68a;
+	border-style:outset;
+	width: 35%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.horizontal {
+	background-color: #ffffff;
+	width: 25%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 10px;
+	box-shadow: 10px 10px 20px #888888;
+}
+
+p.relate_left{
+
+	position:relative;
+	left:-25px;
+	margin-left:auto;
+	margin-right:auto;
+	width:15em;
+}
+
+p.relate_right{
+
+	position:relative;
+	left:100px;
+	margin-left:auto;
+	margin-right:auto;
+	width:15em;
+}
+
+div.vertical {
+
+	background-color: #ffffff;
+	width: 25%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	box-shadow: 10px 10px 20px #888888;
+}
+
+p.prepup{
+	display:inline;
+	margin-left:auto;
+	margin-right:auto;
+	width:15em;
+}
+
+p.relate_up{
+	position:relative;
+	display:inline;
+	top:-15px;
+	margin-left:auto;
+	margin-right:auto;
+	width:15em;
+}
+
+p.downprep{
+	display:inline;
+	
+}
+
+p.relate_down{
+	position:relative;
+	display:inline;
+	bottom:-15px;
+}
+
+div.overlap {
+	background-color: #ffffff;
+	width: 25%;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 10px;
+	box-shadow: 10px 10px 20px #888888;
+}
+
+p.overlap{
+	position:relative;
+	top:-30px;
+	left:30px;
+	margin-left:auto;
+	margin-right:auto;
+	width:15em;
+}
+
+#strange {
+	position: absolute;
+	color: #ffffff;
+	bottom: -410px;
+	left: 46%;
+	right: -50%;
+}
+
+img.displayed {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.wrapper {
+	display:block;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	position: relative;
+	
+}
+
+div.caption{
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+	width: 100%;
+	font-family: "verdana";
+	font-size: 15px;
+	color: #ffffff;
+}
+
+p.caption_content{
+	padding:10px;
+	margin:0px;
+}
+p.whoops{
+	position:absolute;
+}
