@@ -145,6 +145,25 @@ a.dbc_tech:hover {
 	background-image: url("http://i60.tinypic.com/2d8gpzt.jpg");
 }
 
+a.dbc_java:link {	
+	display: block;
+	background-image: url("http://i57.tinypic.com/2re42lc.jpg");
+	text-align: center;
+	width: 56.25em;
+	height: 7.8125em;
+	padding:0px;
+	margin:1em;
+	margin-left:auto;
+	margin-right:auto;
+	border-style:none;
+	border:0px;
+	text-decoration: none;
+}
+a.dbc_java:visited {color:#246bb2;}
+ 	
+a.dbc_java:hover {
+	background-image: url("http://i61.tinypic.com/eelnb.jpg");
+}
 
 
 div.about_me {
