@@ -1,0 +1,37 @@
+div.nav_bar{
+	display:inline-block;
+	position: fixed;
+	background-color:transparent;
+	top: 0;
+	width: 100%;
+	height: .625em;
+	opacity:0.6;
+	padding: .8em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul.nav{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+a.navlink:link {
+		color:#246bb2;	
+		display: inline-block;
+		width: 5.25em;
+		background-color: #999999;
+		text-align: center;
+		padding:0px;
+		margin:0px;
+		border-style:none;
+		border:0px;
+		text-decoration: none;
+}
+a:visited {color:#246bb2;}
+
+a.navlink:hover {
+	color:#ccccff;
+	background-color: #446599;
+}
