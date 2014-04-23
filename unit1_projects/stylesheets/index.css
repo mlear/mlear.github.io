@@ -1,6 +1,6 @@
 header {
 	color: #ffffff;
-	font-size: 2em;
+	font-size: 3em;
 	
 }
 
@@ -26,6 +26,7 @@ div.intro {
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
+	font-size: 1.5em;
 }
 
 body{
