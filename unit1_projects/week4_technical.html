@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\blog.css"/>
+		<link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\nav.css"/>
+		<title>Martin's Blog</title>
+		<h1><center><b>DBC Blog</b></center></h1>
+	</head>
+	<body>
+      <div class="nav_bar">
+  			<ul class="nav">
+  				<li><a class="navlink" href="http://mlear.github.io/">Home</a></li>
+  				<li><a class="navlink" href="#projects">My Projects</a></li>
+  				<li><a class="navlink" href="\unit1_projects\blog_template.html">Blogs</a></li>
+  			</ul>
+ 		   </div>
+    	
+    
+
+   		<div class ="new_blog">
+
+    		<h2><center>JavaScript For The Win!</center></h2>
+
+    		<p class = "blog_body">This weeks article discuss's the enumerable method, .cycle.  Cycle allows for an argument to be passed to it that deterimines how many times it will iterate through the collection that you call it upon.  This allows for a much cleaner way to loop.  For example, say you have an array of integers and you want to find out the sum of all integers stored.  You could do this with:</br> 
+
+        array = [1, 2, 3, 4]</br></br>
+
+        num = array.length</br>
+        sum = 0</br>
+        x = 0</br>
+        while num != 0 do</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;sum = sum + array[x]</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;x += 1</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;num -= 1</br>
+        end</br>
+        puts sum</br></br>
+        # output is 10!</br></br>
+
+        This is long and tedious, and while their are other solutions, the cycle option is much more efficient here:</br></br>
+
+        array = [1, 2, 3, 4]</br></br>
+
+        sum=0</br>
+        array.cycle(1) {|x| sum = sum + x}</br>
+        puts sum</br></br>
+        # output is 10!</br></br>
+
+        Much cleaner!  Less code, less variables used, less to keep track of.  Keep in mind that the argument that you are passing to .cycle is not directing what arguments you are cycling to, but how many times you are cycling through the entire collection.  Watch ouf for that endless loop, make sure you tell .cycle how many times you want it to run!</p>
+
+    	</div>
+
+    	<h2><center>Archived</center></h2>
+
+    	<div class ="archive">	
+
+   			<a class ="past" href="\unit1_projects\week2_technical.html" alt ="Techincal Blog"><center>Week 2 Technical Blog: Positioning</center></a></br>
+
+    		<a class ="past" href="\unit1_projects\week1_website.html" alt ="Website Comparison Blog"><center>Week 1 Website Comparison Blog</center></a></br>
+
+    	</div>
+
+	</body>
+
+</html>
