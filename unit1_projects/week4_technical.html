@@ -21,31 +21,16 @@
 
     		<h2><center>The Joy's of Cycling</center></h2>
 
-    		<p class = "blog_body">This weeks article discuss's the enumerable method, .cycle.  Cycle allows for an argument to be passed to it that deterimines how many times it will iterate through the collection that you call it upon.  This allows for a much cleaner way to loop.  For example, say you have an array of integers and you want to find out the sum of all integers stored.  You could do this with:</br> 
+    		<p class = "blog_body">This weeks article discuss's the enumerable method, .cycle.  Cycle allows for an argument to be passed to it that deterimines how many times it will iterate through the collection that you call it upon.  This allows for a much cleaner way to loop.  For example, say you have an array of integers and you want to find out the sum of all integers stored.  You could do this with:</br></br></p>
 
-        array = [1, 2, 3, 4]</br></br>
+        <script src="https://gist.github.com/mlear/5be766498c4114266af2.js"></script>
 
-        num = array.length</br>
-        sum = 0</br>
-        x = 0</br>
-        while num != 0 do</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;sum = sum + array[x]</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;x += 1</br>
-          &nbsp;&nbsp;&nbsp;&nbsp;num -= 1</br>
-        end</br>
-        puts sum</br></br>
-        # output is 10!</br></br>
+    
+        <p class ="blog_body">This is long and tedious, and while there are other solutions, the cycle option is much more efficient here:</br></br></p>
 
-        This is long and tedious, and while there are other solutions, the cycle option is much more efficient here:</br></br>
+        <script src="https://gist.github.com/mlear/10fdeb805c00df620092.js"></script>
 
-        array = [1, 2, 3, 4]</br></br>
-
-        sum=0</br>
-        array.cycle(1) {|x| sum = sum + x}</br>
-        puts sum</br></br>
-        # output is 10!</br></br>
-
-        Much cleaner!  Less code, less variables used, less to keep track of.  Keep in mind that the argument that you are passing to .cycle is not directing what arguments you are cycling to, but how many times you are cycling through the entire collection.  Watch out for that endless loop, make sure you tell .cycle how many times you want it to run!</p>
+        <p class ="blog_body">Much cleaner!  Less code, less variables used, less to keep track of.  Keep in mind that the argument that you are passing to .cycle is not directing what arguments you are cycling to, but how many times you are cycling through the entire collection.  Watch out for that endless loop, make sure you tell .cycle how many times you want it to run!</p>
 
     	</div>
 
