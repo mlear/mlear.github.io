@@ -7,13 +7,13 @@
 		<h1><center><b>DBC Blog</b></center></h1>
 	</head>
 	<body>
-    	<div class="nav_bar">
+      <div class="nav_bar">
   			<ul class="nav">
   				<li><a class="navlink" href="http://mlear.github.io/">Home</a></li>
   				<li><a class="navlink" href="#projects">My Projects</a></li>
   				<li><a class="navlink" href="\unit1_projects\blog_template.html">Blogs</a></li>
   			</ul>
- 		</div>
+ 		   </div>
     	
     
 
@@ -21,19 +21,26 @@
 
     		<h2><center>JavaScript For The Win!</center></h2>
 
-    		<p class = "blog_body">I could sit here and write paragraph after paragraph about the history of JavaScript, Netscape, Mozilla, AJAX, Dynamic HTML, and more and more and more...  but I won't!  This blog entry is focused purely on why JavaScript is so popular.  First, JS is supported on virtually all major browsers and does not require a plugin, like flash or silverlight did.  Having one language to rule them all works quite nicely for developers, especially when that language is native and has the ability to directly control HTML and CSS.  JavaScript has a huge open source support group that is constantly designing new libraries to make JavaScript easier to control.  JavaScript, while ugly, is constantly becomming easier to learn and us for new programmers.  </br></br>
+    		<h2><center>The Joy's of Cycling</center></h2>
 
-  			JavaScript also allows for communication asynchronously.  It allows for "stuff" to happen in the background of your site without forcing you to reset the entire page or slowing down other process that are also occurring.  Not only does this ridiculously speed up browsing for user, but boosts preformance server side as well.  </br></br>
+        <p class = "blog_body">This weeks article discuss's the enumerable method, .cycle.  Cycle allows for an argument to be passed to it that deterimines how many times it will iterate through the collection that you call it upon.  This allows for a much cleaner way to loop.  For example, say you have an array of integers and you want to find out the sum of all integers stored.  You could do this with:</br></br></p>
 
-  			JavaScript is a prototyping language, which means that instead of building out seperate classes, objects can be defined wherever and whenever needed, which allows for unusual structuring and very fast development.  </br></br>
+        <script src="https://gist.github.com/mlear/5be766498c4114266af2.js"></script>
 
-  			Lets also not forgot about the ability to manipulate and update the code realtime! And last, but certainly not least, node.js!</p>
+    
+        <p class ="blog_body">This is long and tedious, and while there are other solutions, the cycle option is much more efficient here:</br></br></p>
+
+        <script src="https://gist.github.com/mlear/10fdeb805c00df620092.js"></script>
+
+        <p class ="blog_body">Much cleaner!  Less code, less variables used, less to keep track of.  Keep in mind that the argument that you are passing to .cycle is not directing what arguments you are cycling to, but how many times you are cycling through the entire collection.  Watch out for that endless loop, make sure you tell .cycle how many times you want it to run!</p>
 
     	</div>
 
     	<h2><center>Archived</center></h2>
 
     	<div class ="archive">	
+
+        <a class ="past" href="\unit1_projects\week3_technical.html" alt ="JavaScript Blog"><center>Week 3 JavaScript Blog</center></a></br>  
 
    			<a class ="past" href="\unit1_projects\week2_technical.html" alt ="Techincal Blog"><center>Week 2 Technical Blog: Positioning</center></a></br>
 
