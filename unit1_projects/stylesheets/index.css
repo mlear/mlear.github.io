@@ -29,6 +29,11 @@ div.intro {
 	font-size: 1.5em;
 }
 
+img.intro{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 body{
 	background-image: url("http://i58.tinypic.com/2v8lc13.jpg");
 	background-repeat: no-repeat;
