@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\blog.css"/>
-		<link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\nav.css"/>
-		<title>Martin's Blog</title>
-		<h1><center><b>DBC Blog</b></center></h1>
-	</head>
-	<body>
+  <head>
+    <link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\blog.css"/>
+    <title>Martin's Blog</title>
+  </head>
+  <body>
+
+
       <div class="nav_bar">
-  			<ul class="nav">
-  				<li><a class="navlink" href="http://mlear.github.io/">Home</a></li>
-  				<li><a class="navlink" href="#projects">My Projects</a></li>
-  				<li><a class="navlink" href="\unit1_projects\blog_template.html">Blogs</a></li>
-          <li><a class="navlink" href="\unit1_projects\blog_template_cultural.html">Cultural Blogs</a></li>
-  			</ul>
- 		   </div>
-    	
+        <center>
+          <a class="navlink" href="http://mlear.github.io/"><img class="nav_logo" src="http://i62.tinypic.com/2gt5l74.jpg" alt= "home"></a>
+          <a class="navlink" href="https://github.com/mlear"><img class="nav_logo" src="http://i57.tinypic.com/r1bp6c.jpg" alt= "github"></a>
+          <a class="navlink" href="https://twitter.com/MLear09"><img class="nav_logo" src="http://i61.tinypic.com/30iazo4.jpg" alt= "twitter"></a>
+          <a class="navlink" href="http://lnkd.in/ui8Atn"><img class="nav_logo" src="http://i60.tinypic.com/1zbh178.jpg" alt= "linkedin"></a>
+        </center>
+      </div>
+
+      <div class = "blog_image">
+        <img class="blog_back" src="http://i61.tinypic.com/110j91l.jpg" alt= "blog image">
+      </div>
+
+    	<h2><center>Understanding Class</center></h2>
+
+      <p class = "blog_body">This week's article discusses the useful and powerful Ruby Class.  When I first started learning to code with Ruby, the Class was a dark and mysterious unknown to me.  I had no concept of, a.) what the purpose of it was, or b.) why anyone would take the extra work to create one when they could just write out the code and move on.  Keep in mind that the complexity of what I was doing was naming vairables and adding sums.  I really had no real world experience or knew how to even begin to create usefull code.  This week has changed everything for me.  The use of Class to create your own new object with variables and methods greatly simplifies and organizes your code.  Let's look at an example of the class works. </br></br>  My daughter's soccer team won last week, and I have decided that I am going to write a quick little program to keep track of her team and the rest of the league.  I'm going to need a way to store and modify this infomration easily, so I'm going to create a new class to assist in this.  I'm going to call this class League (notice the capitalizaion on your new class name? Yah you need it!)  Inside your class you will need a constructer method which will set the baselines for your new object.  In Ruby, this is the <em>initialize</em> method, and should be placed near the beginning of your class.  For this class, I am going to need use a hash to store different team names, and their relative wins and losses.  So, in my initialize constructer, I'm going to give the new League an empty hash to work with.  </br></br></p>
+
+      <script src="https://gist.github.com/mlear/22e34d90123d48fdbdcb.js"></script>
+
     
+      <p class ="blog_body">Great!  Now my league has something to work with.  So what else will I need here?  I will need the ability to add teams to the league, and to assign wins and losses throughout the season.  This will require me to design methods to do such.  Lets back up a second and look at that last piece of code.  Did you notice the @ in front of the variable name for the hash?  This is designating that variable as an instance variable.  This variable will be available anywhere withen this instance of the new league, but not outside.  The same pertains to any method that you create inside your class. The method will only be availble to be called upon by the class it self, and not some other oustide force.  Lets create some instance methods then:</br></br></p>
 
-   		<div class ="new_blog">
+      <script src="https://gist.github.com/mlear/a5c8a0e4a12bc54afc53.js"></script>
 
-    		<h2><center>Understanding Class</center></h2>
+      <p class ="blog_body">So what we know have here is the ability to create a new object that tracks information passed to it.  With simple modifications of the above code, you could add more catagories to track, you could sort the information and give lists, rankings, or playoff brackets.  You could change the names of variables and use this for another purpose as well, and thats what's great about classes! They are extremely easy to modify and repurpose if needed.</p>
 
-        <p class = "blog_body">This week's article discusses the useful and powerful Ruby Class.  When I first started learning to code with Ruby, the Class was a dark and mysterious unknown to me.  I had no concept of, a.) what the purpose of it was, or b.) why anyone would take the extra work to create one when they could just write out the code and move on.  Keep in mind that the complexity of what I was doing was naming vairables and adding sums.  I really had no real world experience or knew how to even begin to create usefull code.  This week has changed everything for me.  The use of Class to create your own new object with variables and methods greatly simplifies and organizes your code.  Let's look at an example of the class works. </br></br>  My daughter's soccer team won last week, and I have decided that I am going to write a quick little program to keep track of her team and the rest of the league.  I'm going to need a way to store and modify this infomration easily, so I'm going to create a new class to assist in this.  I'm going to call this class League (notice the capitalizaion on your new class name? Yah you need it!)  Inside your class you will need a constructer method which will set the baselines for your new object.  In Ruby, this is the <em>initialize</em> method, and should be placed near the beginning of your class.  For this class, I am going to need use a hash to store different team names, and their relative wins and losses.  So, in my initialize constructer, I'm going to give the new League an empty hash to work with.  </br></br></p>
+    	<div class="blog_image">
+        <img class="blog_back" src="http://i57.tinypic.com/2s10ftu.jpg" alt= "archive image">
+      </div>
 
-        <script src="https://gist.github.com/mlear/22e34d90123d48fdbdcb.js"></script>
+      <div class ="archive">  
 
-    
-        <p class ="blog_body">Great!  Now my league has something to work with.  So what else will I need here?  I will need the ability to add teams to the league, and to assign wins and losses throughout the season.  This will require me to design methods to do such.  Lets back up a second and look at that last piece of code.  Did you notice the @ in front of the variable name for the hash?  This is designating that variable as an instance variable.  This variable will be available anywhere withen this instance of the new league, but not outside.  The same pertains to any method that you create inside your class. The method will only be availble to be called upon by the class it self, and not some other oustide force.  Lets create some instance methods then:</br></br></p>
+        <a class ="past" href="\unit1_projects\week8_technical.html" alt ="Ruby on Rails"><center>Week 8 Ruby on Rails</center></a></br> 
 
-        <script src="https://gist.github.com/mlear/a5c8a0e4a12bc54afc53.js"></script>
+        <a class ="past" href="\unit1_projects\week7_technical.html" alt ="An injection of SQL?"><center>Week 7 SQL Injection Blog</center></a></br> 
 
-        <p class ="blog_body">So what we know have here is the ability to create a new object that tracks information passed to it.  With simple modifications of the above code, you could add more catagories to track, you could sort the information and give lists, rankings, or playoff brackets.  You could change the names of variables and use this for another purpose as well, and thats what's great about classes! They are extremely easy to modify and repurpose if needed.</p>
+        <a class ="past" href="\unit1_projects\week6_technical.html" alt ="You Down with OOP?"><center>Week 6 OOP v. Functional Blog</center></a></br> 
 
-    	</div>
-
-    	<h2><center>Archived</center></h2>
-
-    	<div class ="archive">	
+        <a class ="past" href="\unit1_projects\week5_technical.html" alt ="Understanding Class"><center>Week 5 Class Blog</center></a></br> 
 
         <a class ="past" href="\unit1_projects\week4_technical.html" alt ="JavaScript Blog"><center>Week 4 Cycle Blog</center></a></br> 
 
         <a class ="past" href="\unit1_projects\week3_technical.html" alt ="JavaScript Blog"><center>Week 3 JavaScript Blog</center></a></br>  
 
-   			<a class ="past" href="\unit1_projects\week2_technical.html" alt ="Techincal Blog"><center>Week 2 Technical Blog: Positioning</center></a></br>
+        <a class ="past" href="\unit1_projects\week2_technical.html" alt ="Techincal Blog"><center>Week 2 Technical Blog: Positioning</center></a></br>
 
-    		<a class ="past" href="\unit1_projects\week1_website.html" alt ="Website Comparison Blog"><center>Week 1 Website Comparison Blog</center></a></br>
+        <a class ="past" href="\unit1_projects\week1_website.html" alt ="Website Comparison Blog"><center>Week 1 Website Comparison Blog</center></a></br>
 
-    	</div>
+      </div>
 
-	</body>
+      <footer>
+        <p><center>Designed and authored by Martin Lear... it's an ongoing process, but copyright 2014...</center></p>
+      </footer>
+
+  </body>
 
 </html>

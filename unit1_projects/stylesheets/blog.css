@@ -36,15 +36,7 @@ a.navlink:hover {
 }
 
 h1 {
-	position: absolute;
-	color: #ffffff;
-	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
-	text-align: center;
-	width: 100%;
-	font-size: 4em;
-	top: 1.0em;
-	right: 9em;
-	z-index: 1;
+
 }
 
 h2 {

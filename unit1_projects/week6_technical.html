@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\blog.css"/>
-		<link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\nav.css"/>
-		<title>Martin's Blog</title>
-		<h1><center><b>DBC Blog</b></center></h1>
-	</head>
-	<body>
+  <head>
+    <link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\blog.css"/>
+    <title>Martin's Blog</title>
+  </head>
+  <body>
+
+
       <div class="nav_bar">
-  			<ul class="nav">
-  				<li><a class="navlink" href="http://mlear.github.io/">Home</a></li>
-  				<li><a class="navlink" href="#projects">My Projects</a></li>
-  				<li><a class="navlink" href="\unit1_projects\blog_template.html">Blogs</a></li>
-          <li><a class="navlink" href="\unit1_projects\blog_template_cultural.html">Cultural Blogs</a></li>
-  			</ul>
- 		   </div>
-    	
-    
+        <center>
+          <a class="navlink" href="http://mlear.github.io/"><img class="nav_logo" src="http://i62.tinypic.com/2gt5l74.jpg" alt= "home"></a>
+          <a class="navlink" href="https://github.com/mlear"><img class="nav_logo" src="http://i57.tinypic.com/r1bp6c.jpg" alt= "github"></a>
+          <a class="navlink" href="https://twitter.com/MLear09"><img class="nav_logo" src="http://i61.tinypic.com/30iazo4.jpg" alt= "twitter"></a>
+          <a class="navlink" href="http://lnkd.in/ui8Atn"><img class="nav_logo" src="http://i60.tinypic.com/1zbh178.jpg" alt= "linkedin"></a>
+        </center>
+      </div>
 
-   		<div class ="new_blog">
+      <div class = "blog_image">
+        <img class="blog_back" src="http://i61.tinypic.com/110j91l.jpg" alt= "blog image">
+      </div>
 
-    		<h2><center>You Down With OOP?</center></h2>
+    	<h2><center>You Down With OOP?</center></h2>
 
-        <p class = "blog_body">To start with, every fledgling programmer needs to learn that all languages are different in their approach to programming and some are better at doing specific things than others.  For example, Objected-Oriented Programming (OOP) is centered around creating set objects or classes that have static methods that do "stuff" depending on the information that is passed into them.  Each of these objects are based off of the same code, but have their very own variables that can change the return of the class methods based off the information passed to them.  These variables and methods, called instance variables and instance methods, only exist in a particular creation of a class and are not part of other objects created from the same class.  Alpha.solve may equal true, but Beta.solve may not.  In addition, the methods of OOP can and will modify the state of the class or otherwise interact with the instance variables, this is called Side Effect.  Huh?  What that means is that in addition to returning (or not returning!) a value, the method may change an instance variable, or global variable, or print to screen, or break the method completely.  This is not normally seen in Functional programming.  </br></br>
+      <p class = "blog_body">To start with, every fledgling programmer needs to learn that all languages are different in their approach to programming and some are better at doing specific things than others.  For example, Objected-Oriented Programming (OOP) is centered around creating set objects or classes that have static methods that do "stuff" depending on the information that is passed into them.  Each of these objects are based off of the same code, but have their very own variables that can change the return of the class methods based off the information passed to them.  These variables and methods, called instance variables and instance methods, only exist in a particular creation of a class and are not part of other objects created from the same class.  Alpha.solve may equal true, but Beta.solve may not.  In addition, the methods of OOP can and will modify the state of the class or otherwise interact with the instance variables, this is called Side Effect.  Huh?  What that means is that in addition to returning (or not returning!) a value, the method may change an instance variable, or global variable, or print to screen, or break the method completely.  This is not normally seen in Functional programming.  </br></br>
 
-        Functional programming builds off of itself.  One function is formed.  And then the next level of function is formed using the function that has already been defined.  And then another function is formed calling on the previous function, which references the first, and so on and so on.  The underling objects are never modified, they remain static.  The functions will always return the same answer no matter how many times they are run.  This can not only lead to some pretty awesome math being done, but some very large scale projects being completed cleanly.  By also staying clear of side effects, i.e. not changing other portions of the code when writing code, the programmer can better predict how the code will run and not have to trace back what will happen when he or she changes the value of "x".  </br></br>
+      Functional programming builds off of itself.  One function is formed.  And then the next level of function is formed using the function that has already been defined.  And then another function is formed calling on the previous function, which references the first, and so on and so on.  The underling objects are never modified, they remain static.  The functions will always return the same answer no matter how many times they are run.  This can not only lead to some pretty awesome math being done, but some very large scale projects being completed cleanly.  By also staying clear of side effects, i.e. not changing other portions of the code when writing code, the programmer can better predict how the code will run and not have to trace back what will happen when he or she changes the value of "x".  </br></br>
 
-        So, which is better to use?  Well, I guess the answer to that question is both!  It really depends on what you are are trying to accomplish.  If you are creating a program that will create and store a cookbook, and allow you to make new food entries, then OOP would probably be the better choice.  Why?  Becuase you could program a single class with baseline variables and methods.  OOP is great when you have a fixed set of methods, but an indefinite set of objects that may call on those methods.  And if you ever experience the opposite, then Functional is the way to go.  If you know that you are only going to be dealing with a certain amount of objects, then you can write methods of functions that will deal with those objects to your hearts desire.</br></br>  
+      So, which is better to use?  Well, I guess the answer to that question is both!  It really depends on what you are are trying to accomplish.  If you are creating a program that will create and store a cookbook, and allow you to make new food entries, then OOP would probably be the better choice.  Why?  Becuase you could program a single class with baseline variables and methods.  OOP is great when you have a fixed set of methods, but an indefinite set of objects that may call on those methods.  And if you ever experience the opposite, then Functional is the way to go.  If you know that you are only going to be dealing with a certain amount of objects, then you can write methods of functions that will deal with those objects to your hearts desire.</br></br>  
 
-        Let's look at some examples, I have a, b and c.  I will not be adding new objects d, e or f.  Say that I will have a function that calculates them of these variables.  In the future, maybe, I will want to subtract them, mulitply them, or do differntial equations with them.  But that's in the future and I can always write another function that will allow for me to deal with a, b, and c at that point becuase I know those are the only objects (hint, this is Functional programming!).  But what would happen here in OOP?  If I try to add a new method to a program, it may require searching through class definitions to see what the global effect may be on that change.  Did my other methods modify the variables as I passed them through class?  Did I have a subclass that depended on the original variables to the extent that I now have to include the new variable?</br></br>
+      Let's look at some examples, I have a, b and c.  I will not be adding new objects d, e or f.  Say that I will have a function that calculates them of these variables.  In the future, maybe, I will want to subtract them, mulitply them, or do differntial equations with them.  But that's in the future and I can always write another function that will allow for me to deal with a, b, and c at that point becuase I know those are the only objects (hint, this is Functional programming!).  But what would happen here in OOP?  If I try to add a new method to a program, it may require searching through class definitions to see what the global effect may be on that change.  Did my other methods modify the variables as I passed them through class?  Did I have a subclass that depended on the original variables to the extent that I now have to include the new variable?</br></br>
 
-        Let's flip that around.  What happens if you were to add a new object, 'd'?  If this was being programmed in OOP, then simple, you make a new object out of the predefined class and away you go.  If this was Functional, not so fast...  You would have to go back through all of the functions that have already been written and now account for the new variable 'd'.  Merp.</br></br>
+      Let's flip that around.  What happens if you were to add a new object, 'd'?  If this was being programmed in OOP, then simple, you make a new object out of the predefined class and away you go.  If this was Functional, not so fast...  You would have to go back through all of the functions that have already been written and now account for the new variable 'd'.  Merp.</br></br>
 
-        Truth be told, I still don't understand all of the outcomes here, and have come to the conclusion that I think every programmer should know.  There is no exact way to do something perfectly every single time, but you would be greatly benefited by knowing the repercussions of your actions from the start!</p>
+      Truth be told, I still don't understand all of the outcomes here, and have come to the conclusion that I think every programmer should know.  There is no exact way to do something perfectly every single time, but you would be greatly benefited by knowing the repercussions of your actions from the start!</p>
 
-    	</div>
+    	<div class="blog_image">
+        <img class="blog_back" src="http://i57.tinypic.com/2s10ftu.jpg" alt= "archive image">
+      </div>
 
-    	<h2><center>Archived</center></h2>
+      <div class ="archive">  
 
-    	<div class ="archive">	
+        <a class ="past" href="\unit1_projects\week8_technical.html" alt ="Ruby on Rails"><center>Week 8 Ruby on Rails</center></a></br> 
+
+        <a class ="past" href="\unit1_projects\week7_technical.html" alt ="An injection of SQL?"><center>Week 7 SQL Injection Blog</center></a></br> 
+
+        <a class ="past" href="\unit1_projects\week6_technical.html" alt ="You Down with OOP?"><center>Week 6 OOP v. Functional Blog</center></a></br> 
 
         <a class ="past" href="\unit1_projects\week5_technical.html" alt ="Understanding Class"><center>Week 5 Class Blog</center></a></br> 
 
@@ -46,12 +52,16 @@
 
         <a class ="past" href="\unit1_projects\week3_technical.html" alt ="JavaScript Blog"><center>Week 3 JavaScript Blog</center></a></br>  
 
-   			<a class ="past" href="\unit1_projects\week2_technical.html" alt ="Techincal Blog"><center>Week 2 Technical Blog: Positioning</center></a></br>
+        <a class ="past" href="\unit1_projects\week2_technical.html" alt ="Techincal Blog"><center>Week 2 Technical Blog: Positioning</center></a></br>
 
-    		<a class ="past" href="\unit1_projects\week1_website.html" alt ="Website Comparison Blog"><center>Week 1 Website Comparison Blog</center></a></br>
+        <a class ="past" href="\unit1_projects\week1_website.html" alt ="Website Comparison Blog"><center>Week 1 Website Comparison Blog</center></a></br>
 
-    	</div>
+      </div>
 
-	</body>
+      <footer>
+        <p><center>Designed and authored by Martin Lear... it's an ongoing process, but copyright 2014...</center></p>
+      </footer>
+
+  </body>
 
 </html>

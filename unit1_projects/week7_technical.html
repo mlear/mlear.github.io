@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\blog.css"/>
-		<link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\nav.css"/>
-		<title>Martin's Blog</title>
-		<h1><center><b>DBC Blog</b></center></h1>
-	</head>
-	<body>
+  <head>
+    <link rel="stylesheet" type="text/ccs" href="\unit1_projects\stylesheets\blog.css"/>
+    <title>Martin's Blog</title>
+  </head>
+  <body>
+
+
       <div class="nav_bar">
-  			<ul class="nav">
-  				<li><a class="navlink" href="http://mlear.github.io/">Home</a></li>
-  				<li><a class="navlink" href="#projects">My Projects</a></li>
-  				<li><a class="navlink" href="\unit1_projects\blog_template.html">Blogs</a></li>
-          <li><a class="navlink" href="\unit1_projects\blog_template_cultural.html">Cultural Blogs</a></li>
-  			</ul>
- 		   </div>
-    	
-    
+        <center>
+          <a class="navlink" href="http://mlear.github.io/"><img class="nav_logo" src="http://i62.tinypic.com/2gt5l74.jpg" alt= "home"></a>
+          <a class="navlink" href="https://github.com/mlear"><img class="nav_logo" src="http://i57.tinypic.com/r1bp6c.jpg" alt= "github"></a>
+          <a class="navlink" href="https://twitter.com/MLear09"><img class="nav_logo" src="http://i61.tinypic.com/30iazo4.jpg" alt= "twitter"></a>
+          <a class="navlink" href="http://lnkd.in/ui8Atn"><img class="nav_logo" src="http://i60.tinypic.com/1zbh178.jpg" alt= "linkedin"></a>
+        </center>
+      </div>
 
-   		<div class ="new_blog">
+      <div class = "blog_image">
+        <img class="blog_back" src="http://i61.tinypic.com/110j91l.jpg" alt= "blog image">
+      </div>
 
-    		<h2><center>An injection of SQL</center></h2>
+    	<h2><center>An injection of SQL</center></h2>
 
-        <p class = "blog_body">As fledgling programmers, we all need to be aware of what SQL injection is, and how to properly program in order to prevent it.  Basically, the only reason SQL injection is possible is either because the programmer didn?t know any better, or the programmer was lazy/sloppy.</br></br>
+      <p class = "blog_body">As fledgling programmers, we all need to be aware of what SQL injection is, and how to properly program in order to prevent it.  Basically, the only reason SQL injection is possible is either because the programmer didn?t know any better, or the programmer was lazy/sloppy.</br></br>
 
-        - The Problem - </br></br>
+      - The Problem - </br></br>
 
-        SQl injection refers to ?injecting?  SQL code in order to have unauthorized access to the database the code controls.  This is done, and no I am not giving examples on how to hack as the information is relatively simple to find online as is, by passing carefully crafted strings as input into the code, such as a username or password.  If the underlying program was not set up correctly and just calls a query on the input, it may result in a change to the original query and allow the crafty person to write whatever code he wanted to.  All of the sudden your user table ids are available, all of them.  Your credit card numbers, your passwords, your usernames? everything in that table is fair game.  Hopefully this individual is kind and doesn?t include a DROP TABLE command as well.    The problem here is with directly using the input of the user in the query, or concatenating.  There is no check to see if the input is even valid, it just plugs in whatever is typed, and if certain characters are used, then you have issues to deal with. </br></br>
+      SQl injection refers to ?injecting?  SQL code in order to have unauthorized access to the database the code controls.  This is done, and no I am not giving examples on how to hack as the information is relatively simple to find online as is, by passing carefully crafted strings as input into the code, such as a username or password.  If the underlying program was not set up correctly and just calls a query on the input, it may result in a change to the original query and allow the crafty person to write whatever code he wanted to.  All of the sudden your user table ids are available, all of them.  Your credit card numbers, your passwords, your usernames? everything in that table is fair game.  Hopefully this individual is kind and doesn?t include a DROP TABLE command as well.    The problem here is with directly using the input of the user in the query, or concatenating.  There is no check to see if the input is even valid, it just plugs in whatever is typed, and if certain characters are used, then you have issues to deal with. </br></br>
 
-        - The Solution - </br></br>
+      - The Solution - </br></br>
 
-        There are multiple ways to combat this.  You could try and escape out the unwanted characters in the input, but that?s leads to other problems as you may get rid of something that you weren?t supposed to.  You could try and blacklist certain words or characters, but this also runs into the same problems.  It seems that the preferred method, and one that I admittedly have not had the pleasure to test fully, is to use Parameterized Queries.  Huh?  Yah.  What that means is that when you set up your code, you use parameters for your values.  After you get your input, you set them equal to the parameters.  Now, when you run your query, the original code runs as intended and fills in the parameters when called upon, and not potentially adding in additional code like the concatenation was doing before.  Simple fix!  As long as we train ourselves from the very beginning to always code in this fashion, we will all avoid headaches and liability in the future.</p>
+      There are multiple ways to combat this.  You could try and escape out the unwanted characters in the input, but that?s leads to other problems as you may get rid of something that you weren?t supposed to.  You could try and blacklist certain words or characters, but this also runs into the same problems.  It seems that the preferred method, and one that I admittedly have not had the pleasure to test fully, is to use Parameterized Queries.  Huh?  Yah.  What that means is that when you set up your code, you use parameters for your values.  After you get your input, you set them equal to the parameters.  Now, when you run your query, the original code runs as intended and fills in the parameters when called upon, and not potentially adding in additional code like the concatenation was doing before.  Simple fix!  As long as we train ourselves from the very beginning to always code in this fashion, we will all avoid headaches and liability in the future.</p>
 
-    	</div>
+    	<div class="blog_image">
+        <img class="blog_back" src="http://i57.tinypic.com/2s10ftu.jpg" alt= "archive image">
+      </div>
 
-    	<h2><center>Archived</center></h2>
+      <div class ="archive">  
 
-    	<div class ="archive">	
+        <a class ="past" href="\unit1_projects\week8_technical.html" alt ="Ruby on Rails"><center>Week 8 Ruby on Rails</center></a></br> 
+
+        <a class ="past" href="\unit1_projects\week7_technical.html" alt ="An injection of SQL?"><center>Week 7 SQL Injection Blog</center></a></br> 
 
         <a class ="past" href="\unit1_projects\week6_technical.html" alt ="You Down with OOP?"><center>Week 6 OOP v. Functional Blog</center></a></br> 
 
@@ -46,12 +50,16 @@
 
         <a class ="past" href="\unit1_projects\week3_technical.html" alt ="JavaScript Blog"><center>Week 3 JavaScript Blog</center></a></br>  
 
-   			<a class ="past" href="\unit1_projects\week2_technical.html" alt ="Techincal Blog"><center>Week 2 Technical Blog: Positioning</center></a></br>
+        <a class ="past" href="\unit1_projects\week2_technical.html" alt ="Techincal Blog"><center>Week 2 Technical Blog: Positioning</center></a></br>
 
-    		<a class ="past" href="\unit1_projects\week1_website.html" alt ="Website Comparison Blog"><center>Week 1 Website Comparison Blog</center></a></br>
+        <a class ="past" href="\unit1_projects\week1_website.html" alt ="Website Comparison Blog"><center>Week 1 Website Comparison Blog</center></a></br>
 
-    	</div>
+      </div>
 
-	</body>
+      <footer>
+        <p><center>Designed and authored by Martin Lear... it's an ongoing process, but copyright 2014...</center></p>
+      </footer>
+
+  </body>
 
 </html>
