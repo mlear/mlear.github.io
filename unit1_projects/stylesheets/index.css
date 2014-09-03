@@ -145,7 +145,6 @@ a.footer_link:link{
 	display: inline-block;
 	width: 100%;
 	height: 2em;
-/*	border: 1px solid blue;*/
 	padding-top: 1em;
 	background-color: #1a1a1a;
 	text-align: center;
@@ -182,16 +181,12 @@ div.contact_link{
 	display: inline;
 	float: left; 
 	margin-left: 20em;
-/*	padding-bottom: 1em;
-*/	width: 20%;
-/*	border: 1px solid red;
-*/}
+	width: 20%;
+}
 
 div.resume_link{
 	display: inline;
 	float: right;
 	margin-right: 20em;
-/*	padding-bottom: 1em;
-*/	width: 20%;
-/*	border: 1px solid red;*/
+	width: 20%;
 }
