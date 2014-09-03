@@ -1,16 +1,4 @@
-header {
-	color: #ffffff;
-	font-size: 3em;
-	
-}
 
-h1 {
-	color: #ffffff;
-	font-size: 2em;
-	text-align: right;
-	text-decoration: italic;
-	font-family: Papyrus, fantasy;
-}
 
 h2 {
 	color: #000000;
@@ -21,40 +9,28 @@ h2 {
 	margin-left: auto;
 }
 
-div.intro {
+p.name{
+	color: #000000;
+	font-size: 1.2em;
+	text-decoration: italic;
+}
+
+p.skills{
+	color: #000000;
+	font-size: 1.2em;
+}
+
+div.resume {
 	color: #000000;
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
-	font-size: 2.5em;
+	font-size: 2.0em;
 }
 
-div.intro_image{
-	left: 0;
-	margin-top: 4em;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 0;
-}
-
-div.pic_wrap{
-	left: 0;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 0;
-	background-color: #000000;
-}
-
-img.intro{
-	width: 100%;
-	height: 100%;
-}
-
-img.pic{
-	width: 60%;
-	height: 60%;
+div.color {
+	display: inline;
+	color: #cccccc;
 }
 
 body {
@@ -102,35 +78,6 @@ ul.nav{
 	padding:0;
 }
 
-div.boot_camp {
-	border-style: outset;
-	border-color: #000000;
-	width: 80%;
-	background-color: #999999;
-	opacity: .85;
-	margin-top: 2em;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 2em;
-}
-
-a.boot:link {
-		color:#b2b2b2;	
-		display: inline-block;
-		width: 100%;
-		padding-top: 1em;
-		padding-bottom: 1em;
-		background-color: #1a1a1a;
-		text-align: center;
-		text-decoration: none;
-}
-a.boot:visited {color:#b2b2b2;}
-
-a.boot:hover {
-	color:#1a1a1a;
-	background-color: #b2b2b2;
-}
-
 a.mail:link{
 	text-decoration: none;
 	color: #B26B00;
@@ -139,6 +86,20 @@ a.mail:link{
 a.mail:hover{
 	color: #ff9900;
 }
+
+a.contact:link{
+	text-decoration: none;
+	color: #B26B00;
+}
+
+a.contact:visited{
+	color: #b26b00;
+}
+
+a.contact:hover{
+	color: #ff9900;
+}
+
 
 a.footer_link:link{
 	color:#b2b2b2;	
@@ -158,6 +119,21 @@ a.footer_link:hover{
 a.footer_link:visited{
 	color: #b26b00;
 }
+
+div.resume{
+	margin-top: 3em;
+}
+
+div.topic{
+	border-bottom: 1px solid black;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+div.skills{
+	margin-bottom: 2em;
+}
+
 
 div.wrapper {
 	display:block;
@@ -182,16 +158,12 @@ div.contact_link{
 	display: inline;
 	float: left; 
 	margin-left: 20em;
-/*	padding-bottom: 1em;
-*/	width: 20%;
-/*	border: 1px solid red;
-*/}
+	width: 20%;
+}
 
 div.resume_link{
 	display: inline;
 	float: right;
 	margin-right: 20em;
-/*	padding-bottom: 1em;
-*/	width: 20%;
-/*	border: 1px solid red;*/
+	width: 20%;
 }
